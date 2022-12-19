@@ -1,0 +1,476 @@
+[
+    {
+        "param_name": "v_init",
+        "value": -70,
+        "type": "global"
+    },
+    {
+        "param_name": "celsius",
+        "value": 34,
+        "type": "global"
+    },
+    {
+        "param_name": "cm",
+        "value": 1,
+        "type": "section",
+        "dist_type": "uniform",
+        "sectionlist": "all"
+    },
+    {
+        "param_name": "ena",
+        "value": 50,
+        "type": "section",
+        "dist_type": "uniform",
+        "sectionlist": "all"
+    },
+    {
+        "param_name": "ek",
+        "value": -90,
+        "type": "section",
+        "dist_type": "uniform",
+        "sectionlist": "all"
+    },
+    {
+        "param_name": "gbar_nax",
+        "sectionlist": "axonal",
+        "value": 0.37014312502389984,
+        "mech": "nax",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkdrbar_kdr",
+        "sectionlist": "axonal",
+        "value": 0.011589752440319534,
+        "mech": "kdr",
+        "mech_param": "gkdrbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_kmb",
+        "sectionlist": "axonal",
+        "value": 0.0023227481098397197,
+        "mech": "kmb",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkabar_kap",
+        "sectionlist": "axonal",
+        "value": 0.22856095247445563,
+        "mech": "kap",
+        "mech_param": "gkabar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "Ra",
+        "sectionlist": "axonal",
+        "value": 66.37526106490881,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "g_pas",
+        "sectionlist": "axonal",
+        "value": 0.0001989209776764541,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "e_pas",
+        "sectionlist": "axonal",
+        "value": -54.35890044172069,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gnabar_nap",
+        "sectionlist": "somatic",
+        "value": 4.508981776534641e-06,
+        "mech": "nap",
+        "mech_param": "gnabar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkabar_kap",
+        "sectionlist": "somatic",
+        "value": 0.09927449959440757,
+        "mech": "kap",
+        "mech_param": "gkabar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_kmb",
+        "sectionlist": "somatic",
+        "value": 0.0022946986147422753,
+        "mech": "kmb",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkdrbar_kdr",
+        "sectionlist": "somatic",
+        "value": 0.0010269973301146927,
+        "mech": "kdr",
+        "mech_param": "gkdrbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkdrbar_kdr",
+        "sectionlist": "apical",
+        "value": 0.0010269973301146927,
+        "mech": "kdr",
+        "mech_param": "gkdrbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkdrbar_kdr",
+        "sectionlist": "basal",
+        "value": 0.0010269973301146927,
+        "mech": "kdr",
+        "mech_param": "gkdrbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_nax",
+        "sectionlist": "somatic",
+        "value": 0.0428270506566489,
+        "mech": "nax",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_nax",
+        "sectionlist": "apical",
+        "value": 0.0428270506566489,
+        "mech": "nax",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_nax",
+        "sectionlist": "basal",
+        "value": 0.0428270506566489,
+        "mech": "nax",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "ghdbar_hd",
+        "sectionlist": "somatic",
+        "value": 1.9211834241660988e-05,
+        "mech": "hd",
+        "mech_param": "ghdbar",
+        "type": "range",
+        "dist": "(1. + 3./100. * {distance})*{value}",
+        "dist_type": "linear_hd_apic"
+    },
+    {
+        "param_name": "ghdbar_hd",
+        "sectionlist": "apical",
+        "value": 1.9211834241660988e-05,
+        "mech": "hd",
+        "mech_param": "ghdbar",
+        "type": "range",
+        "dist": "(1. + 3./100. * {distance})*{value}",
+        "dist_type": "linear_hd_apic"
+    },
+    {
+        "param_name": "ghdbar_hd",
+        "sectionlist": "basal",
+        "value": 1.9211834241660988e-05,
+        "mech": "hd",
+        "mech_param": "ghdbar",
+        "type": "range",
+        "dist": "(1. + 3./100. * {distance})*{value}",
+        "dist_type": "linear_hd_apic"
+    },
+    {
+        "param_name": "gcalbar_cal",
+        "sectionlist": "somatic",
+        "value": 3.346929256270759e-06,
+        "mech": "cal",
+        "mech_param": "gcalbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcalbar_cal",
+        "sectionlist": "apical",
+        "value": 3.346929256270759e-06,
+        "mech": "cal",
+        "mech_param": "gcalbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcalbar_cal",
+        "sectionlist": "basal",
+        "value": 3.346929256270759e-06,
+        "mech": "cal",
+        "mech_param": "gcalbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcanbar_can",
+        "sectionlist": "somatic",
+        "value": 1.3818970220505431e-05,
+        "mech": "can",
+        "mech_param": "gcanbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcanbar_can",
+        "sectionlist": "apical",
+        "value": 1.3818970220505431e-05,
+        "mech": "can",
+        "mech_param": "gcanbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcanbar_can",
+        "sectionlist": "basal",
+        "value": 1.3818970220505431e-05,
+        "mech": "can",
+        "mech_param": "gcanbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcatbar_cat",
+        "sectionlist": "somatic",
+        "value": 1.8119396560863205e-05,
+        "mech": "cat",
+        "mech_param": "gcatbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcatbar_cat",
+        "sectionlist": "apical",
+        "value": 1.8119396560863205e-05,
+        "mech": "cat",
+        "mech_param": "gcatbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gcatbar_cat",
+        "sectionlist": "basal",
+        "value": 1.8119396560863205e-05,
+        "mech": "cat",
+        "mech_param": "gcatbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_kca",
+        "sectionlist": "somatic",
+        "value": 0.00019865905344481456,
+        "mech": "kca",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_kca",
+        "sectionlist": "apical",
+        "value": 0.00019865905344481456,
+        "mech": "kca",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_kca",
+        "sectionlist": "basal",
+        "value": 0.00019865905344481456,
+        "mech": "kca",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_cagk",
+        "sectionlist": "somatic",
+        "value": 2.091624366154469e-05,
+        "mech": "cagk",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_cagk",
+        "sectionlist": "apical",
+        "value": 2.091624366154469e-05,
+        "mech": "cagk",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gbar_cagk",
+        "sectionlist": "basal",
+        "value": 2.091624366154469e-05,
+        "mech": "cagk",
+        "mech_param": "gbar",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "Ra",
+        "sectionlist": "somatic",
+        "value": 369.7215250402923,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "Ra",
+        "sectionlist": "apical",
+        "value": 369.7215250402923,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "Ra",
+        "sectionlist": "basal",
+        "value": 369.7215250402923,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "g_pas",
+        "sectionlist": "somatic",
+        "value": 9.011451008793288e-05,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "g_pas",
+        "sectionlist": "apical",
+        "value": 9.011451008793288e-05,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "g_pas",
+        "sectionlist": "basal",
+        "value": 9.011451008793288e-05,
+        "type": "section",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "e_pas",
+        "sectionlist": "somatic",
+        "value": -55.24301864325545,
+        "type": "section",
+        "dist": "({value}-5*{distance}/150)",
+        "dist_type": "linear_e_pas_apic"
+    },
+    {
+        "param_name": "e_pas",
+        "sectionlist": "apical",
+        "value": -55.24301864325545,
+        "type": "section",
+        "dist": "({value}-5*{distance}/150)",
+        "dist_type": "linear_e_pas_apic"
+    },
+    {
+        "param_name": "e_pas",
+        "sectionlist": "basal",
+        "value": -55.24301864325545,
+        "type": "section",
+        "dist": "({value}-5*{distance}/150)",
+        "dist_type": "linear_e_pas_apic"
+    },
+    {
+        "param_name": "gamma_cacum",
+        "sectionlist": "somatic",
+        "value": 0.3124027932352662,
+        "mech": "cacum",
+        "mech_param": "gamma",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gamma_cacum",
+        "sectionlist": "apical",
+        "value": 0.3124027932352662,
+        "mech": "cacum",
+        "mech_param": "gamma",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gamma_cacum",
+        "sectionlist": "basal",
+        "value": 0.3124027932352662,
+        "mech": "cacum",
+        "mech_param": "gamma",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "tau_cacum",
+        "sectionlist": "somatic",
+        "value": 225.6734192575825,
+        "mech": "cacum",
+        "mech_param": "tau",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "tau_cacum",
+        "sectionlist": "apical",
+        "value": 225.6734192575825,
+        "mech": "cacum",
+        "mech_param": "tau",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "tau_cacum",
+        "sectionlist": "basal",
+        "value": 225.6734192575825,
+        "mech": "cacum",
+        "mech_param": "tau",
+        "type": "range",
+        "dist_type": "uniform"
+    },
+    {
+        "param_name": "gkabar_kad",
+        "sectionlist": "apical",
+        "value": 0.005429395407957792,
+        "mech": "kad",
+        "mech_param": "gkabar",
+        "type": "range",
+        "dist": "(15./(1. + math.exp((300-{distance})/50)))*{value}",
+        "dist_type": "sigmoid_kad_apic"
+    },
+    {
+        "param_name": "gkabar_kad",
+        "sectionlist": "basal",
+        "value": 0.005429395407957792,
+        "mech": "kad",
+        "mech_param": "gkabar",
+        "type": "range",
+        "dist": "(15./(1. + math.exp((300-{distance})/50)))*{value}",
+        "dist_type": "sigmoid_kad_apic"
+    }
+]
